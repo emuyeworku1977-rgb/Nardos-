@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* ===== GLOBAL ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(#2c5364,#203a43);
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+}
+
+nav a {
+  color: deepskyblue;
+  margin: 15px;
+  text-decoration: none;
+  font-size: 20px;
+  text-shadow: 0 0 10px #a855f7;
+}
+
+/* ===== SECTIONS ===== */
+section {
+  padding: 100px 20px;
+  min-height: 100vh;
+}
+
+/* ===== HOME ===== */
+#home {
+  background: linear-gradient(#38bdf8,#a855f7);
+  text-align: center;
+  color: gold;
+}
+
+#home h1 {
+  font-size: 40px;
+}
+
+#wow {
+  font-size: 25px;
+  color: navy;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+}
+
+/* ===== ABOUT ===== */
+#about {
+  background: linear-gradient(gray,#ffc,#e9d5ff,grey);
+}
+h1{text-align:center;
+  font-size:80px;
+}
+h2{font-size:60px;
+  text-align: left;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+img{
+  width:200px;
+  height:150px;
+  float: left;
+}
+
+.about img {
+  width: 250px;
+  border-radius: 15px;
+  width:200px;
+  height:150px;
+}
+
+.about p {
+  flex: 1;
+  font-size: 18px;
+  float: right;
+}
+
+/* ===== SKILLS ===== */
+#skill {
+  background: #a855f7;
+  color: black;
+}
+
+.skill-box {
+  max-width: 500px;
+  color:black;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bar {
+  height: 6px;
+  background: #ddd;
+  margin-bottom: 15px;
+}
+
+.fill {
+  height: 100%;
+  background: red;
+}
+
+.html { width: 50%; }
+.css { width: 40%; }
+.php { width: 0%; }
+.js { width: 3%; }
+#skill p{color:black;}
+
+/* ===== SERVICES ===== */
+#service {
+  background: #e9d5ff;
+}
+
+/* ===== CONTACT ===== */
+#contact {
+  background: lightcoral;
+}
+
+.contact-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px;
+  padding:25px 0;
+  float: left;
+  padding:50px 10%;
+}
+.contact-container h1{
+  text-align:center;
+  font-size:50px;
+  margin-bottom:50px;
+  float:center;
+}
+
+
+.contact-form{
+  width: 50%;
+  float:left;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin:  10px 0;
+  padding:10px ;
+}
+
+.form-box{
+  width: 100%;
+  margin: 40px;
+  padding: 30px;
+  float: right;
+  text-align: right;
+}
+#contact a{color:black;
+  font-size:80px;
+}
+#contact a:hover{color:white;}
+
+.social:hover{color:blue;}
+.social i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width: 768px) {
+  .about,
+  .contact{
+    flex-direction: column;
+  }
+
+  .contact-form,
+  .contact-info{
+    width: 100%;
+  }
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#service">Service</a>
+  <a href="#skill">Skill</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+  <h1>WELCOME TO MY PORTFOLIO</h1>
+  <p>HELLO I AM EMEBET WORKU</p>
+  <p id="wow"></p>
+  <a href="#contact" class="btn">Contact Me</a>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h1>About Me</h1>
+  <div class="about">
+
+  </div>
+  <img src="/anabella/IMG_20260417_211251_161.jpg">
+
+    <p>
+      I am a Grade 11 student learning web design. I enjoy creating websites
+      using HTML, CSS, and JavaScript. I love building modern and responsive designs.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skill">
+  <h1>My Skills</h1>
+    <p>
+    I am a Grade 11 student with growing skills in web design
+    and development. I can create websites using HTML and CSS,and
+    I am learning JavaScript to add
+    animations and interactive features. I enjoy designing clean layouts, adding colors, and
+    building simple, responsive web pages. I am continuously improving my skills and exploring new ideas to become a better web developer.
+    I edited video and I posted on youtube.
+    by the I have my own youtube </p><br><br>
+    <a href="#home">Read more </a><br><br>
+
+  <div class="skill-box">
+
+    <div class="skill">
+      <span>HTML</span><span>50%</span>
+    </div>
+    <div class="bar"><div class="fill html"></div></div>
+
+    <div class="skill">
+      <span>CSS</span><span>40%</span>
+    </div>
+    <div class="bar"><div class="fill css"></div></div>
+
+    <div class="skill">
+      <span>PHP</span><span>0%</span>
+    </div>
+    <div class="bar"><div class="fill php"></div></div>
+
+    <div class="skill">
+      <span>JavaScript</span><span>1%</span>
+    </div>
+    <div class="bar"><div class="fill js"></div></div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="service">
+  <h1>My Services</h1>
+      <h2>At home</h2>
+ <p>i support my family by do different thing in home example clean house
+ clothes anything
+ cook food
+ </p>
+ <h2>At school</h2>
+ <p>i respect classmates and teachers
+ by work my home work and class work
+ </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h1>Contact Me</h1>
+
+  <div class="contact-container">
+
+    <!-- LEFT -->
+    <div class="contact-form">
+            <input type="text" placeholder="Your name">
+      <input type="text" placeholder="Your subject">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Message"></textarea>
+      <a href="#about">Send me</a>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="contact-info">
+    <p>please support me and join my website if you join my you can get satisfy</p>
+    
+      <p>📍 Addis Ababa</p>
+      <p>+251 945 77 89 09</p>
+     <p>📧 emuye@email.com </p>
+     <div class="social">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
+    </div>
+</section>
+
+<!-- TYPING SCRIPT -->
+<script>
+const text = "I AM A WEB DESIGN STUDENT";
+let i = 0;
+function typing() {
+  const el = document.getElementById("wow");
+
+  if (i < text.length) {
+    el.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing, 100);
+  } else {
+    setTimeout(() => {
+      el.innerHTML = "";
+      i = 0;
+      typing();
+    }, 1500);
+  }
+}
+typing();
+</script>
+
+</body>
+</html>
